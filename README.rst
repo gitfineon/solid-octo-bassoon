@@ -1,6 +1,9 @@
 solid-octo-bassoon
 ##################
 
+.. contents::
+   :depth: 2
+
 commit-collection
 =================
 
@@ -24,3 +27,15 @@ miscellaneous
 HiKey stuff from vchong
 https://github.com/vchong/dotfiles/tree/master/hikey_build_scripts
 
+Level 2
+--------------------------------------------------
+
+Level 3
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note::
+
+   this is a little note on file ``solid-octo-bassoon.md`` 
+
+Level 4
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
