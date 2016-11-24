@@ -52,8 +52,8 @@ send
 
 * IP=111.222.333.444 make send
 
-   + czf ... linux-image-*.deb | ssh linaro@$(IP) "cd /tmp; tar xvzf -"
-   + dpkg --force-all -i
+  + czf ... linux-image-*.deb | ssh linaro@$(IP) "cd /tmp; tar xvzf -"
+  + dpkg --force-all -i
 
 recovery
 --------
@@ -125,6 +125,8 @@ help
 1. WiFi on HiKey debian
 
 Open /etc/network/interfaces and add:
+
+::
 
   allow-hotplug wlan0
   iface wlan0 inet dhcp
