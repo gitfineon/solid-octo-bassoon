@@ -1,6 +1,9 @@
 OP-TEE Build Makefile targets
 =============================
 
+.. contents::
+   :depth: 1
+
 all 
 ---
 
