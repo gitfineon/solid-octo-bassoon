@@ -6,6 +6,7 @@ OP-TEE Build Makefile targets
 # Targets
 ################################################################################
 all: 
+
 * prepare 
   + @mkdir -p $(ROOT)/out
 * arm-tf 
@@ -35,14 +36,17 @@ all:
     - optee-client-common
 
 send:
+
 * IP=111.222.333.444 make send
    + czf ... linux-image-*.deb | ssh linaro@$(IP) "cd /tmp; tar xvzf -"
    + dpkg --force-all -i
 
 recovery:
+
 * sudo python $(ROOT)/burn-boot/hisi-idt.py --img1=$(LLOADER_PATH)/l-loader.bin
 
 flash:
+
 * fastboot flash 
   + ptable 
   + fastboot
@@ -51,24 +55,29 @@ flash:
   + system
 
 flash-fip:
+
 * fastboot flash 
   + fastboot
 
 flash-boot-img: 
+
 * boot-img
 * fastboot flash 
   + boot
 
 flash-system-img:
+
 * system-img
 * fastboot flash 
   + system
 
 aes-perf: 
+
 * optee-os 
 * optee-client
 
 sha-perf: 
+
 * optee-os 
 * optee-client
 
@@ -80,6 +89,7 @@ cleaner: clean prepare-cleaner linux-cleaner nvme-cleaner system-img-cleaner
 
 
 help:
+
 1. WiFi on HiKey debian
 Open /etc/network/interfaces and add:
   allow-hotplug wlan0
